@@ -1,8 +1,37 @@
-# React + Vite
+# My Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based website showcasing personal projects and portfolios.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Display GitHub profile information
+- Show repositories and their details
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/yourusername/my-website.git`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm start`
+
+## Usage
+
+After setting up, visit http://localhost:3000 to see the website in action.
+
+## Technologies Used
+
+- React
+- Tailwind CSS
+- Axios
+
+## Contributing
+
+Contributions are welcome! Please follow these guidelines:
+- Submit issues for bugs or feature requests.
+- Fork the repository and create a new branch for your contribution.
+- Make changes and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.

@@ -1,6 +1,35 @@
+import { useState } from "react";
 import React from "react";
 
 export default function Contact() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    tel:""
+  });
+
+  const handleChange = (e) => {
+    const {name, value} = e.target;
+    setForm((prevForm) => ({
+      ...prevForm,
+      [name]: value
+    }));
+  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    alert("Form Submitted!");
+    handleReset();
+  }
+
+  const handleReset = () =>{
+    setForm({
+      name: "",
+      email: "",
+      no: ""
+  })
+  }
+
   return (
     <div className="relative flex items-top justify-center min-h-[700px] bg-white sm:items-center sm:pt-0">
       <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
@@ -97,7 +126,9 @@ export default function Contact() {
                   name="name"
                   id="name"
                   placeholder="Full Name"
+                  value={form.name}
                   className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                  onChange={handleChange}
                 />
               </div>
 
@@ -110,7 +141,9 @@ export default function Contact() {
                   name="email"
                   id="email"
                   placeholder="Email"
+                  value={form.email}
                   className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                  onChange={handleChange}
                 />
               </div>
 
@@ -119,17 +152,20 @@ export default function Contact() {
                   Number
                 </label>
                 <input
-                  type="tel"
+                  type="number"
                   name="tel"
                   id="tel"
                   placeholder="Telephone Number"
+                  value={form.tel}
                   className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                  onChange={handleChange}
                 />
               </div>
 
               <button
                 type="submit"
                 className="md:w-32 bg-orange-700 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-orange-600 transition ease-in-out duration-300"
+                onClick={handleSubmit}
               >
                 Submit
               </button>

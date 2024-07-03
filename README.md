@@ -31,7 +31,3 @@ Contributions are welcome! Please follow these guidelines:
 - Submit issues for bugs or feature requests.
 - Fork the repository and create a new branch for your contribution.
 - Make changes and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.

@@ -17,7 +17,7 @@ To run this project locally, follow these steps:
 
 ## Usage
 
-After setting up, visit http://localhost:3000 to see the website in action.
+After setting up, visit http://localhost:5173/ to see the website in action.
 
 ## Technologies Used
 
